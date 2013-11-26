@@ -8,8 +8,8 @@
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
 
-(global-set-key [left] 'undo)
-(global-set-key [right] 'redo)
+;;(global-set-key [left] 'undo)
+;;(global-set-key [right] 'redo)
 
 (define-key input-decode-map "\e\eOA" [(meta up)])
 (define-key input-decode-map "\e\eOB" [(meta down)])

@@ -35,9 +35,34 @@
 (load-profile "js")
 (load-profile "coffee")
 (load-profile "golang")
+(load-profile "web")
 
 (load-customizations)
 
 ;;(add-to-list 'command-switch-alist '("clojure" . (lambda (n) (load-profile "clojure"))))
 ;;(add-to-list 'command-switch-alist '("ruby" . (lambda (n) (load-profile "ruby"))))
 ;;(add-to-list 'command-switch-alist '("android" . (lambda (n) (load-profile "android"))))
+
+(add-hook 'php-mode-hook
+          '(lambda ()
+             (setq tab-stop-list (number-sequence 4 200 4))
+             (setq indent-tabs-mode t)
+             (setq tab-width 4)
+             (setq c-basic-offset 4)))
+
+(setq auto-mode-alist
+         (cons '("\\.ngdoc" . markdown-mode) auto-mode-alist))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(js2-basic-offset 2)
+ '(js2-cleanup-whitespace t)
+)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
