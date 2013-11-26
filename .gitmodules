@@ -55,6 +55,6 @@
 [submodule "libs/web-mode"]
 	path = libs/web-mode
 	url = git@github.com:fxbois/web-mode.git
-[submodule "libs/less-css"]
-	path = libs/less-css
+[submodule "libs/less-css-mode"]
+	path = libs/less-css-mode
 	url = git@github.com:purcell/less-css-mode.git
