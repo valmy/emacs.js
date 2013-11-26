@@ -37,6 +37,7 @@
 (load-profile "golang")
 (load-profile "clojure")
 (load-profile "web")
+(load-profile "less-css")
 
 (load-customizations)
 
