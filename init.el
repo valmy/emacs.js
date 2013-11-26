@@ -36,6 +36,7 @@
 (load-profile "coffee")
 (load-profile "golang")
 (load-profile "web")
+(load-profile "less-css")
 
 (load-customizations)
 
