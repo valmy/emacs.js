@@ -11,6 +11,7 @@ install-js2mode:
 	@echo "Installing js2-mode"
 	@mkdir -p libs/js2-mode-compiled
 	@cd libs/js2-mode && make && mv *.elc ../js2-mode-compiled/.
+	@cp libs/js2-mode/js2-old-indent.el libs/js2-mode-compiled/.
 
 init-submodules:
 	@echo "Initializing submodules"
